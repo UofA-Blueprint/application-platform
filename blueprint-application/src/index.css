@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url('@/assets/fonts/ProximaNovaRegular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url('@/assets/fonts/ProximaNovaSemibold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url('@/assets/fonts/HelveticaNowDisplay-Regular.otf');
+  font-weight: normal;
+}
+
+@layer base {
+  .text-display1 {
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    font-size: 4rem;
+  }
+  .text-display2 {
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+  .text-h1 {
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .text-h2 {
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .text-h3 {
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .text-h4 {
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .text-body-reg {
+    font-family: "Helvetica Now Display";
+    font-weight: normal;
+    font-size: 1rem;
+  }
+  .text-body-sm {
+    font-family: "Helvetica Now Display";
+    font-weight: normal;
+    font-size: 0.875rem;
+  }
+  .text-sm {
+    font-family: "Helvetica Now Display";
+    font-weight: normal;
+    font-size: 0.75rem;
+  }
+  .text-tiny {
+    font-family: "Helvetica Now Display";
+    font-weight: normal;
+    font-size: 0.625rem;
+  }
+}

@@ -1,0 +1,26 @@
+basePath: /api/v1
+host: localhost:8080
+info:
+  contact: {}
+  description: Backend API for Application Platform
+  title: Application Platform API
+  version: "1.0"
+paths:
+  /hello:
+    get:
+      consumes:
+      - application/json
+      description: Returns hello world message
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Hello World
+      tags:
+      - example
+swagger: "2.0"
