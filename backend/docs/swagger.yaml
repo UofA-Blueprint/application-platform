@@ -6,6 +6,23 @@ info:
   title: Application Platform API
   version: "1.0"
 paths:
+  /health:
+    get:
+      consumes:
+      - application/json
+      description: Check if server is running
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Health Check
+      tags:
+      - health
   /hello:
     get:
       consumes:
@@ -22,5 +39,5 @@ paths:
             type: object
       summary: Hello World
       tags:
-      - example
+      - health
 swagger: "2.0"
